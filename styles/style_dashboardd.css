@@ -1,0 +1,69 @@
+/* Dashboard general */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Luckiest Guy', cursive;
+    background: url("https://i.ytimg.com/vi/MLJGi6-o4wo/hqdefault.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    text-align: center;
+    width: 500px; /* Tabla más ancha */
+    max-height: 80vh;
+    overflow: hidden;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: center;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+th {
+    background-color: #ff9800;
+    color: white;
+}
+
+/* Scroll vertical solo en tbody */
+tbody {
+    display: block;
+    max-height: 400px; /* Altura antes de scroll */
+    overflow-y: auto;  /* Solo scroll vertical */
+    overflow-x: hidden; /* Elimina scroll horizontal */
+}
+
+thead, tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed; /* Mantiene columnas alineadas */
+}
+
+tr:nth-child(even) {
+    background-color: rgba(255, 152, 0, 0.2);
+}
+
+tr:hover {
+    background-color: rgba(255, 152, 0, 0.4);
+}
